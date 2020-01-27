@@ -20,3 +20,22 @@ as.numeric(x) #Objects can be explicitly coerced from one class to another using
 as.character((x))
 as.logical(x)
 x
+m=matrix(1:3,nrow = 2,ncol = 3)
+m
+dim(m)
+attributes(m)
+m=1:10
+dim(m)=c(2,5)
+m
+x=1:5
+y=2:10
+cbind(x,y)
+x=list(1,2,4,5,6,'b',TRUE)
+x
+x=factor(c("yes","yes","yes","yes","no"))
+x
+table(x)
+unclass(x)
+initial <- read.table("datatable")
+classes <- sapply(initial, class)
+tabAll <- read.table("datatable.txt", colClasses = classes)
